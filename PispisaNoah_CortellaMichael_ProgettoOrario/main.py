@@ -21,7 +21,7 @@ def main():
     testo = docenti_classe.lettura_file("OrarioTabellaGlobale") #salvo il contenuto del file in una matrice
     rip = False
     while not rip: #ciclo per ripetere il programma 
-        s = menù.scelta(0,4) #scelta di cosa eseguire
+        s = menu.scelta(0,4) #scelta di cosa eseguire
         if s == 0:
             rip = True
         elif s == 1:
@@ -32,6 +32,9 @@ def main():
             err = docenti_classe.docenti(testo,classe) #se la funzione ritorna un errore mando un messaggio
             if err != None:
                 print("Classe non esistente")
+            else:
+                print("File generato con successo")
+        #stessa procedura della scelta precedente anche per le successive
         elif s == 2:
             print("Dice l'orario del docente e le ore di lezione\n")
             docente = ""
@@ -40,6 +43,8 @@ def main():
             err = docenti_classe.orario_docente(testo,docente)
             if err != None:
                 print("Il docente non è presente")
+            else:
+                print("File generato con successo")
         elif s == 3:
             print("Dice il numero di ore a disposizione del docente\n")
             docente = ""
@@ -48,16 +53,20 @@ def main():
             err = docenti_classe.cognome_nome(testo,docente)
             if err != None:
                 print("Il docente non è presente")
+            else:
+                print("File generato con successo")
         elif s == 4:
             print("Dice la lista e il numero di docenti che hanno lezione in una determinata ora di un determinato giorno\n")
-            ora = f.lim_I("Inserire l'ora: ",1,8)
+            ora = f.lim_I("Inserire l'ora: ",1,8) #limito la scelta delle ore
             giorno = ""
             while giorno == "":
                 giorno = f.s("Inserire il giorno: ").capitalize()
-            giorno = giorno[0:2]
+            giorno = giorno[0:2] #prendo solo le prime 2 lettere del giorno
             err = docenti_classe.docenti_lezione(testo,ora,giorno)
             if err != None:
                 print("Giorno non valido")
+            else:
+                print("File generato con successo")
         if rip != True:
             rip = f.b("Vuoi fare qualcos'altro? (1=si, 0=no) ")
             rip = not rip
