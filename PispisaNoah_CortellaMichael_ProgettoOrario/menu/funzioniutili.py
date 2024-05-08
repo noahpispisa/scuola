@@ -1,7 +1,7 @@
 """
 il modulo contiene:
 le fuinzioni per avere in input
-    inetri
+    inetri 
     reali
     booleani
     stringhe(una sintassi più breve rispetto ad "input" di python)
