@@ -1,5 +1,5 @@
 import menu.funzioniutili as f #contiene le funzioni per gli input e le parti di codice usate più spesso
-premessaggio = "Digitare" #prima parte del messaggio
+premessaggio = "Digitare" #prima parte del messaggio 
 midmessaggio = "per" #terza parte del messaggio, la seconda è il numero da digitare
 sep = "-"*40 #un separatore
 

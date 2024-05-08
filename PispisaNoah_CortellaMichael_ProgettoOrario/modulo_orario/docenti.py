@@ -7,7 +7,7 @@ def lettura_file(nomefile):
     parametri(nomefile)
     nomefile: si deve passare il nome del file di testo per poterlo aprire
 
-    ritorna la lista con le righe del testo formattate
+    ritorna la lista con le righe del testo formattate 
     '''
 
     righe = [] #creo la matrice che conterrà le righe
