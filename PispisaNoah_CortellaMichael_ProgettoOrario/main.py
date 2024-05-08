@@ -4,7 +4,7 @@ import menu.funzioniutili as f
 def main():
 
     """
-    funzionamento 
+    funzionamento
     tramite il modulo "menù" faccio comparire un menù all'utetnte e gli chiedo la funzione da eseguire
     chiedo, dopo che la scelta è stata effettuata, i dati all'utente tramite il modulo "funzioniutili"
     una volta inseriti tutti i dati eseguo la funzione e, in caso ci sia, do un messaggio di errore
