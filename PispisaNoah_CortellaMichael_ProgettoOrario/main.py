@@ -1,6 +1,6 @@
 import modulo_orario.docenti as docenti_classe
-import menù.menù as menù
-import menù.funzioniutili as f
+import menu.menu as menu
+import menu.funzioniutili as f
 def main():
 
     """
