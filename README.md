@@ -6,7 +6,14 @@
 questo programma mostra un menù all'utente da coui ha le opzioni di scelta,
 una volta effettuata chiede i dati necessari per la funzione da eseguire,
 una volta immessi correttamente la esegue per poi chiedere se si vuole ripetere il programma.
-genera e/o modifica dei file.txt che vengono messi nella cartella da cui si ha fatto partire il programma
+genera e/o modifica dei file.txt 
+
+## posizione e nome file
+vengono generati fino a 4 file, si troveranno nella **cartella da cui si ha fatto partire il programma**:
+1. `docenti delle classi.txt`
+2. `docenti orario.txt`
+3. `docenti ore a disposizione.txt`
+4. `docenti a lezione.txt`
 
 ## cosa contiene:
 **3 cartelle:**
